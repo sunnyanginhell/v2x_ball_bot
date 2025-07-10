@@ -1,0 +1,9 @@
+source;share/v2x_ball_bot/hook/path.ps1
+source;share/v2x_ball_bot/hook/path.dsv
+source;share/v2x_ball_bot/hook/path.sh
+source;share/v2x_ball_bot/hook/pythonpath.ps1
+source;share/v2x_ball_bot/hook/pythonpath.dsv
+source;share/v2x_ball_bot/hook/pythonpath.sh
+source;share/v2x_ball_bot/hook/pythonscriptspath.ps1
+source;share/v2x_ball_bot/hook/pythonscriptspath.dsv
+source;share/v2x_ball_bot/hook/pythonscriptspath.sh

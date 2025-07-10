@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/v2x_ball_bot/v2x_ball_bot.egg-info
+writing ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/PKG-INFO
+writing dependency_links to ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/dependency_links.txt
+writing entry points to ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/entry_points.txt
+writing requirements to ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/requires.txt
+writing top-level names to ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/top_level.txt
+writing manifest file '../../build/v2x_ball_bot/v2x_ball_bot.egg-info/SOURCES.txt'
+reading manifest file '../../build/v2x_ball_bot/v2x_ball_bot.egg-info/SOURCES.txt'
+writing manifest file '../../build/v2x_ball_bot/v2x_ball_bot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sunnyang/ros2_ws/build/v2x_ball_bot/build
+creating /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib
+creating /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot
+copying v2x_ball_bot/ball_node.py -> /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot
+copying v2x_ball_bot/__init__.py -> /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot
+running install
+running install_lib
+creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot
+copying /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot/ball_node.py -> /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot
+copying /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot/__init__.py -> /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot
+byte-compiling /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot/ball_node.py to ball_node.cpython-310.pyc
+byte-compiling /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share
+creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/ament_index
+creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/ament_index/resource_index
+creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/ament_index/resource_index/packages
+copying resource/v2x_ball_bot -> /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/ament_index/resource_index/packages
+creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/v2x_ball_bot
+copying package.xml -> /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/v2x_ball_bot
+running install_egg_info
+Copying ../../build/v2x_ball_bot/v2x_ball_bot.egg-info to /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ball_node script to /home/sunnyang/ros2_ws/install/v2x_ball_bot/bin
+writing list of installed files to '/home/sunnyang/ros2_ws/build/v2x_ball_bot/install.log'

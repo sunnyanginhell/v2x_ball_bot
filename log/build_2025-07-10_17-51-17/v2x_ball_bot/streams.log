@@ -1,0 +1,39 @@
+[0.211s] Invoking command in '/home/sunnyang/ros2_ws/src/v2x_ball_bot': PYTHONPATH=/home/sunnyang/ros2_ws/build/v2x_ball_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/v2x_ball_bot build --build-base /home/sunnyang/ros2_ws/build/v2x_ball_bot/build install --record /home/sunnyang/ros2_ws/build/v2x_ball_bot/install.log --single-version-externally-managed install_data
+[0.287s] running egg_info
+[0.288s] creating ../../build/v2x_ball_bot/v2x_ball_bot.egg-info
+[0.288s] writing ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/PKG-INFO
+[0.288s] writing dependency_links to ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/dependency_links.txt
+[0.288s] writing entry points to ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/entry_points.txt
+[0.288s] writing requirements to ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/requires.txt
+[0.288s] writing top-level names to ../../build/v2x_ball_bot/v2x_ball_bot.egg-info/top_level.txt
+[0.288s] writing manifest file '../../build/v2x_ball_bot/v2x_ball_bot.egg-info/SOURCES.txt'
+[0.289s] reading manifest file '../../build/v2x_ball_bot/v2x_ball_bot.egg-info/SOURCES.txt'
+[0.290s] writing manifest file '../../build/v2x_ball_bot/v2x_ball_bot.egg-info/SOURCES.txt'
+[0.290s] running build
+[0.290s] running build_py
+[0.290s] creating /home/sunnyang/ros2_ws/build/v2x_ball_bot/build
+[0.290s] creating /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib
+[0.290s] creating /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot
+[0.290s] copying v2x_ball_bot/ball_node.py -> /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot
+[0.290s] copying v2x_ball_bot/__init__.py -> /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot
+[0.290s] running install
+[0.290s] running install_lib
+[0.291s] creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot
+[0.291s] copying /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot/ball_node.py -> /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot
+[0.291s] copying /home/sunnyang/ros2_ws/build/v2x_ball_bot/build/lib/v2x_ball_bot/__init__.py -> /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot
+[0.291s] byte-compiling /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot/ball_node.py to ball_node.cpython-310.pyc
+[0.291s] byte-compiling /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot/__init__.py to __init__.cpython-310.pyc
+[0.291s] running install_data
+[0.291s] creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share
+[0.291s] creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/ament_index
+[0.291s] creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/ament_index/resource_index
+[0.291s] creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/ament_index/resource_index/packages
+[0.291s] copying resource/v2x_ball_bot -> /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/ament_index/resource_index/packages
+[0.291s] creating /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/v2x_ball_bot
+[0.292s] copying package.xml -> /home/sunnyang/ros2_ws/install/v2x_ball_bot/share/v2x_ball_bot
+[0.292s] running install_egg_info
+[0.292s] Copying ../../build/v2x_ball_bot/v2x_ball_bot.egg-info to /home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages/v2x_ball_bot-0.0.0-py3.10.egg-info
+[0.292s] running install_scripts
+[0.299s] Installing ball_node script to /home/sunnyang/ros2_ws/install/v2x_ball_bot/bin
+[0.299s] writing list of installed files to '/home/sunnyang/ros2_ws/build/v2x_ball_bot/install.log'
+[0.311s] Invoked command in '/home/sunnyang/ros2_ws/src/v2x_ball_bot' returned '0': PYTHONPATH=/home/sunnyang/ros2_ws/build/v2x_ball_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunnyang/ros2_ws/install/v2x_ball_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/v2x_ball_bot build --build-base /home/sunnyang/ros2_ws/build/v2x_ball_bot/build install --record /home/sunnyang/ros2_ws/build/v2x_ball_bot/install.log --single-version-externally-managed install_data
