@@ -6,16 +6,17 @@ package_name = 'v2x_ball_bot'
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],  # OK
+    packages=[package_name],  # 반드시 패키지 디렉토리명과 동일하게
     data_files=[
-        ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
-        ('share/' + package_name, ['package.xml']),
+        ('share/ament_index/resource_index/packages',
+            [f'resource/{package_name}']),
+        (f'share/{package_name}', ['package.xml']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='sunnyangee',
-    maintainer_email='none@example.com',
-    description='ROS 2 node package for V2X communication bot',
+    maintainer_email='sunnyangee@example.com',
+    description='V2X ROS2 bot',
     license='MIT',
     tests_require=['pytest'],
     entry_points={

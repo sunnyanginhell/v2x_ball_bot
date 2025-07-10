@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
 Name: v2x-ball-bot
 Version: 0.0.0
-Summary: ROS 2 node package for V2X communication bot
+Summary: V2X ROS2 bot
 Home-page: UNKNOWN
 Maintainer: sunnyangee
-Maintainer-email: none@example.com
+Maintainer-email: sunnyangee@example.com
 License: MIT
 Platform: UNKNOWN
 

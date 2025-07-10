@@ -78,9 +78,9 @@ _colcon_package_sh_source_script() {
 }
 
 # source sh hooks
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/v2x_ball_bot/hook/path.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/v2x_ball_bot/hook/pythonpath.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/v2x_ball_bot/hook/pythonscriptspath.sh"
+_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/v2x_ball_bot/hook/ament_prefix_path.sh"
+_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/../../build/v2x_ball_bot/share/v2x_ball_bot/hook/pythonpath_develop.sh"
 
 unset _colcon_package_sh_source_script
 unset COLCON_CURRENT_PREFIX
