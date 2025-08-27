@@ -12,7 +12,7 @@ def make_marker(ball_msg, frame_id, now):
 
     marker.pose.position.x = ball_msg.x
     marker.pose.position.y = ball_msg.y
-    marker.pose.position.z = ball_msg.z
+    marker.pose.position.z = 0.65
 
     marker.scale.x = marker.scale.y = marker.scale.z = 0.1
     marker.color.a = 1.0

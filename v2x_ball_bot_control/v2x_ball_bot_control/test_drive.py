@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import time
-from rosmaster import Rosmaster   # rosmaster.py와 같은 폴더에 있을 때
+from v2x_ball_bot_control.rosmaster import Rosmaster
 
 PORT = "/dev/ttyUSB2"   # 필요시 "/dev/ttyACM0"나 /dev/serial/by-id/... 로 교체
 CAR_TYPE = 1            # X3 = 1

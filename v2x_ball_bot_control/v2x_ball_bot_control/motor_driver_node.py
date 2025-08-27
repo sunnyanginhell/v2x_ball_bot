@@ -35,7 +35,7 @@ class MotorDriver(Node):
         self.max_accel_radps2 = float(self.declare_parameter('max_accel_radps2', 50.0).value)  # accel limit
         # safety
         self.cmd_timeout_s = float(self.declare_parameter('cmd_timeout_s', 0.5).value)
-        self.estop_topic = self.declare_parameter('estop_topic', '/safety/estop_cmd').value
+        self.estop_topic = self.declare_parameter('estop_topic', '/safety/estop').value
         self.use_estop = bool(self.declare_parameter('use_estop', False).value)
         # wheel direction (set True if your wiring inverts a side)
         self.invert_left  = bool(self.declare_parameter('invert_left',  False).value)
@@ -46,7 +46,7 @@ class MotorDriver(Node):
         self.left_topic  = self.declare_parameter('left_topic',  '/left_wheel/vel').value
         self.right_topic = self.declare_parameter('right_topic', '/right_wheel/vel').value
         # serial backend params
-        self.serial_port = self.declare_parameter('serial_port', '/dev/ttyACM0').value
+        self.serial_port = self.declare_parameter('serial_port', '/dev/ttyUSB0').value
         self.serial_baud = int(self.declare_parameter('serial_baud', 115200).value)
         self.serial_timeout = float(self.declare_parameter('serial_timeout', 0.02).value)
 

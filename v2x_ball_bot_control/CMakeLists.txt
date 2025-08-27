@@ -11,6 +11,30 @@ ament_python_install_package(v2x_ball_bot_control)
 # Nodes 설치
 # =========================
 
+# ball_motor_node 설치
+install(PROGRAMS
+  v2x_ball_bot_control/ball_motor_node.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME ball_motor_node
+  PERMISSIONS OWNER_EXECUTE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
+)
+
+# test_drive 설치
+install(PROGRAMS
+  v2x_ball_bot_control/test_drive.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME test_drive
+  PERMISSIONS OWNER_EXECUTE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
+)
+
+# ball_to_cmd_node 설치
+install(PROGRAMS
+  v2x_ball_bot_control/ball_to_cmd_node.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME ball_to_cmd_node
+  PERMISSIONS OWNER_EXECUTE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
+)
+
 # motor_driver_node 설치
 install(PROGRAMS
   v2x_ball_bot_control/motor_driver_node.py
@@ -43,7 +67,7 @@ install(PROGRAMS
 
 # ✅ YOLO 모델 파일 함께 설치
 install(FILES
-  v2x_ball_bot_control/ball_detector_v3.pt
+  v2x_ball_bot_control/new_ball_detector.pt
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import os
 
 class BallDetector:
-    def __init__(self, package_dir, model_file='ball_detector_v3.pt'):
+    def __init__(self, package_dir, model_file='new_ball_detector.pt'):
         model_path = os.path.join(package_dir, model_file)
         self.model = YOLO(model_path)
 
