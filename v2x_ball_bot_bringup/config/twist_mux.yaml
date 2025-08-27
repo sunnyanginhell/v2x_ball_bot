@@ -1,0 +1,18 @@
+# v2x_ball_bot_control/config/twist_mux.yaml
+topics:
+  - name: servo
+    topic: /cmd_vel_servo
+    timeout: 0.2
+    priority: 70
+  - name: nav2
+    topic: /nav2/cmd_vel
+    timeout: 0.2
+    priority: 60
+
+locks:
+  - name: e_stop
+    topic: /safety/estop_cmd        # std_msgs/Bool
+    timeout: 0.5
+    priority: 100
+
+output_topic: /cmd_vel_out
