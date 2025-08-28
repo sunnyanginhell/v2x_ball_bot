@@ -1,0 +1,112 @@
+<!-- BehaviorTree.CPP v3 XML -->
+<root main_tree_to_execute="BallPickupFlow">
+
+  <!-- === 공통 포트/블랙보드 키 ===
+       입력:  /selected_ball, policy/state, keepout_ok
+       출력:  approach_done, pickup_success, need_recover
+       내부:  distance_to_ball, human_near
+  -->
+  <BehaviorTree ID="BallPickupFlow">
+
+    <!-- ── 가드 레이어: 환경/안전 조건 먼저 확인 ── -->
+    <Sequence name="GuardsAndFlow">
+
+      <!-- (1) 선택된 공 수신 및 거리 계산 -->
+      <!-- /selected_ball를 구독해 {selected_ball}와 {distance_to_ball} 채우기 -->
+      <SelectedBallAvailable topic="/selected_ball"
+                             selected_ball="{selected_ball}"
+                             distance_out="{distance_to_ball}"/>
+
+      <!-- (2) B팀(휴먼 근접) 신호: true면 즉시 실패로 트리 중단 -->
+      <!-- 내부적으로 /bteam/human_near (std_msgs/Bool) 구독한다고 가정 -->
+      <Not>
+        <HumanNearStop topic="/bteam/human_near" human_near="{human_near}"/>
+      </Not>
+
+      <!-- (3) Keepout/안전구역 통과 여부 -->
+      <!-- keepout_ok는 Topic/Param/서비스 등으로 확인하는 조건 노드 -->
+      <KeepoutOk key="{keepout_ok}"/>
+
+      <!-- (4) 정밀 접근 모드 진입 전 거리 가드: 0.5 m 미만 -->
+      <DistanceBelow distance="{distance_to_ball}" threshold="0.5"/>
+
+      <!-- ── 본 플로우: EnterPrecisionMode → VisualServoing → Pickup → Verify → RecoverIfNeeded ── -->
+
+      <!-- EnterPrecisionMode: policy/state로 모드 전환 -->
+      <EnterPrecisionMode policy_state_topic="policy/state"
+                          mode="PRECISION_APPROACH"/>
+
+      <!-- VisualServoing: 뎁스/비전 서보링으로 미세 정렬/접근
+           성공 시 approach_done=true 토픽(또는 블랙보드)로 알림 -->
+      <VisualServoing color_topic="/color/image_raw"
+                      depth_topic="/depth/image_raw"
+                      selected_ball="{selected_ball}"
+                      approach_done_out="{approach_done}"/>
+
+      <!-- Pickup: 집게/서보 암으로 집기 → 성공/실패 반환 -->
+      <Pickup pickup_success_out="{pickup_success}"/>
+
+      <!-- Verify: IMU/포스/비전으로 실수거 여부 확인, 실패 시 need_recover=true 세팅 -->
+      <Verify selected_ball="{selected_ball}"
+              pickup_success="{pickup_success}"
+              need_recover_out="{need_recover}"/>
+
+      <!-- RecoverIfNeeded: need_recover가 true면 회복 루틴 실행(자세 재정렬/다른 공 전환 등) -->
+      <RecoverIfNeeded need_recover="{need_recover}"/>
+
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- === 노드 타입 선언(플러그인 ID) ===
+       컨트롤 패키지에서 등록한 커스텀 노드들의 ID를 아래와 동일하게 맞추세요. -->
+  <TreeNodesModel>
+    <!-- Conditions -->
+    <Condition ID="SelectedBallAvailable">
+      <input_port name="topic"/>
+      <output_port name="selected_ball"/>
+      <output_port name="distance_out"/>
+    </Condition>
+
+    <Condition ID="HumanNearStop">
+      <input_port name="topic"/>
+      <output_port name="human_near"/>
+    </Condition>
+
+    <Condition ID="KeepoutOk">
+      <input_port name="key"/>
+    </Condition>
+
+    <Condition ID="DistanceBelow">
+      <input_port name="distance"/>
+      <input_port name="threshold"/>
+    </Condition>
+
+    <!-- Actions -->
+    <Action ID="EnterPrecisionMode">
+      <input_port name="policy_state_topic"/>
+      <input_port name="mode"/>
+    </Action>
+
+    <Action ID="VisualServoing">
+      <input_port name="color_topic"/>
+      <input_port name="depth_topic"/>
+      <input_port name="selected_ball"/>
+      <output_port name="approach_done_out"/>
+    </Action>
+
+    <Action ID="Pickup">
+      <output_port name="pickup_success_out"/>
+    </Action>
+
+    <Action ID="Verify">
+      <input_port name="selected_ball"/>
+      <input_port name="pickup_success"/>
+      <output_port name="need_recover_out"/>
+    </Action>
+
+    <Action ID="RecoverIfNeeded">
+      <input_port name="need_recover"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>
