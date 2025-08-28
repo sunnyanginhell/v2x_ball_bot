@@ -8,8 +8,6 @@ def generate_launch_description():
         get_package_share_directory('v2x_ball_bot_bringup'), 'config'
     )
 
-    rviz_config_path = os.path.join(bringup_dir, 'ball_perception.rviz')
-
     return LaunchDescription([
         # Ball perception node
         Node(
@@ -21,17 +19,8 @@ def generate_launch_description():
                 'rgb_topic': '/color/image_raw',
                 'depth_topic': '/depth/image_raw',
                 'camera_info_topic': '/color/camera_info',
-                'publish_frame': 'map'
+                'publish_frame': 'base_link'   # ✅ 로봇 기준 좌표
             }]
-        ),
-
-        # RViz
-        Node(
-            package='rviz2',
-            executable='rviz2',
-            name='rviz2',
-            arguments=['-d', rviz_config_path],
-            output='screen'
         ),
 
         # Static TF: map -> odom

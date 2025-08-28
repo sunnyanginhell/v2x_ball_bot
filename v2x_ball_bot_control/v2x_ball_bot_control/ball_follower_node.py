@@ -21,25 +21,25 @@ class BallFollowerNode(Node):
         self.get_logger().info('공 추적 제어 노드 초기화 시작')
 
         # ROS2 파라미터 선언
-        self.ball_topic = self.declare_parameter('ball_topic', '/balls').value
+        self.ball_topic = self.declare_parameter('ball_topic', '/selected_ball').value
         self.estop_topic = self.declare_parameter('estop_topic', '/safety/estop').value
 
         # P 제어 (핵심 튜닝값)
-        self.k_linear = self.declare_parameter('k_linear', 0.3).value
-        self.k_angular = self.declare_parameter('k_angular', 0.2).value
+        self.k_linear = self.declare_parameter('k_linear', 0.4).value
+        self.k_angular = self.declare_parameter('k_angular', 1.0).value
 
         # 목표 및 속도 제한
-        self.target_dist = self.declare_parameter('target_dist_m', 0.5).value
+        self.target_dist = self.declare_parameter('target_dist_m', 0.1).value
         self.max_linear_speed = self.declare_parameter('v_max', 0.5).value
         self.max_angular_speed = self.declare_parameter('w_max', 0.5).value
 
         # 가감속 제한(Slew Rate)
         self.accel_linear = self.declare_parameter('accel_v', 0.3).value
-        self.accel_angular = self.declare_parameter('accel_w', 0.3).value
+        self.accel_angular = self.declare_parameter('accel_w', 0.1).value
 
         # 정지 조건
-        self.stop_margin = self.declare_parameter('stop_margin_m', 0.05).value
-        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 3.0).value
+        self.stop_margin = self.declare_parameter('stop_margin_m', 0.3).value
+        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 15.0).value
 
         # 타임 아웃
         self.ball_timeout = self.declare_parameter('ball_timeout_sec', 1.0).value
@@ -113,7 +113,7 @@ class BallFollowerNode(Node):
                 distance = math.hypot(x, y)
                 dist_type = "planar(xy)"
 
-            angle = math.atan2(y, x)
+            angle = math.atan2(y / 2.0, x)
             self.get_logger().info(f"거리 계산 방식: {dist_type}", throttle_duration_sec=1)
 
             # 3. 정지 조건
