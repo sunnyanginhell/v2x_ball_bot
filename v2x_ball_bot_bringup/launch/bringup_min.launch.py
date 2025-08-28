@@ -51,10 +51,10 @@ def generate_launch_description():
         output='screen'
     )
 
-    # === SLAM Toolbox ===
+    # === SLAM Toolbox (async 모드로 통일) ===
     slam = Node(
         package='slam_toolbox',
-        executable='sync_slam_toolbox_node',
+        executable='async_slam_toolbox_node',
         name='slam_toolbox',
         parameters=[{
             'odom_frame': 'odom',
@@ -63,8 +63,23 @@ def generate_launch_description():
             'scan_topic': '/scan',
             'publish_tf': True,
             'resolution': 0.05,
+            'mode': 'mapping',
         }],
         output='screen'
+    )
+
+    # === 맵 서버 추가 ===
+    map_server = Node(
+        package='nav2_map_server',
+        executable='map_server',
+        name='map_server',
+        output='screen',
+        parameters=[{
+            'yaml_filename': os.path.join(
+                get_package_share_directory('v2x_ball_bot_bringup'),
+                'maps', 'map.yaml'
+            )
+        }]
     )
 
     # === Robot State Publisher (URDF → TF, 로봇 모델 표시) ===
@@ -85,5 +100,6 @@ def generate_launch_description():
         tf_odom,
         tf_camera,
         slam,
+        map_server,
         robot_state_publisher
     ])

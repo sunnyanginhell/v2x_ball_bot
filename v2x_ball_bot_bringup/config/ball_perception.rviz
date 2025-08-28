@@ -13,12 +13,7 @@ Visualization Manager:
     Fixed Frame: map
     Background Color: 48; 48; 48
   Displays:
-    - Class: rviz_default_plugins/Map
-      Name: Map
-      Enabled: true
-      Topic: /map
-      Alpha: 0.7
-      Draw Behind: false
+    # OccupancyGrid Map 제거
     - Class: rviz_default_plugins/TF
       Name: TF
       Enabled: true

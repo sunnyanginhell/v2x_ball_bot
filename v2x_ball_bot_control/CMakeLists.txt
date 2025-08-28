@@ -58,6 +58,13 @@ install(PROGRAMS
   RENAME ball_perception_node
 )
 
+# ball_follower_node 설치 
+install(PROGRAMS
+  v2x_ball_bot_control/ball_follower_node.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME ball_follower_node
+)
+
 # odom_tf_pub 설치
 install(PROGRAMS
   v2x_ball_bot_control/odom_tf_pub.py

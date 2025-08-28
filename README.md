@@ -8,6 +8,7 @@ colcon build --symlink-install
 cd ~/ros2_ws
 rm -rf build/v2x_ball_bot_control install/v2x_ball_bot_control log/v2x_ball_bot_control
 rm -rf build/v2x_ball_bot_bringup install/v2x_ball_bot_bringup log/v2x_ball_bot_bringup
+
 colcon build --symlink-install --packages-select v2x_ball_bot_control v2x_ball_bot_bringup
 
 ## Rviz2 실행
@@ -56,3 +57,7 @@ ros2 run v2x_ball_bot_control motor_driver_node \
              -p serial_port:=/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0001-if00-port0 \
              -p serial_baud:=115200
 
+
+
+#usb고정 follower 노드 
+ros2 run v2x_ball_bot_control ball_follower_node --ros-args -p serial_port:=/dev/ttyUSB1
