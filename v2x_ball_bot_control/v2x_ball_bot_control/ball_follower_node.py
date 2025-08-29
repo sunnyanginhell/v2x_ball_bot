@@ -38,8 +38,8 @@ class BallFollowerNode(Node):
         self.accel_angular = self.declare_parameter('accel_w', 0.1).value
 
         # 정지 조건
-        self.stop_margin = self.declare_parameter('stop_margin_m', 0.3).value
-        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 15.0).value
+        self.stop_margin = self.declare_parameter('stop_margin_m', 0.4).value
+        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 5.0).value
 
         # 타임 아웃
         self.ball_timeout = self.declare_parameter('ball_timeout_sec', 1.0).value
