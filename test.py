@@ -1,39 +1,56 @@
-import serial
+#!/usr/bin/env python3
 import time
+# v2x_ball_bot_control 폴더에 rosmaster.py가 있다고 가정합니다.
+# 만약 다른 위치에 있다면 경로를 맞게 수정해야 합니다.
+from v2x_ball_bot_control.rosmaster import Rosmaster
 
-# 라즈베리파이의 하드웨어 시리얼 포트 이름
-# 최신 라즈베리파이 OS에서는 /dev/serial0이 표준입니다.
-# 만약 작동하지 않으면 /dev/ttyAMA0으로 시도해보세요.
-SERIAL_PORT = '/dev/serial0' 
-BAUD_RATE = 9600 # OpenCR(아두이노)의 Serial.begin()에 설정된 값과 일치해야 합니다.
+# --- 설정 (사용자 환경에 맞게 수정) ---
+# Rosmaster 보드가 연결된 시리얼 포트 이름
+# `ls /dev/tty*` 명령어로 확인 가능 (보통 /dev/ttyUSB0 또는 /dev/ttyACM0)
+SERIAL_PORT = "/dev/ttyUSB0"
+# 차량 종류 (X3 모델의 경우 1)
+CAR_TYPE = 1
+# ------------------------------------
+
+# bot 변수를 전역적으로 접근할 수 있도록 초기화
+bot = None
 
 try:
-    # 시리얼 포트 열기
-    opencr = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1.0)
-    print(f"'{SERIAL_PORT}' 포트 연결 성공. 2초 후 테스트 시작...")
-    time.sleep(2) # 보드가 리셋되고 안정화될 시간을 줍니다.
+    # 1. Rosmaster 객체 생성 및 연결
+    print(f"'{SERIAL_PORT}'에 연결을 시도합니다...")
+    bot = Rosmaster(com=SERIAL_PORT, car_type=CAR_TYPE)
+    bot.create_receive_threading() # 데이터 수신 스레드 시작
+    time.sleep(0.1)
+    bot.set_car_type(CAR_TYPE) # 차량 종류 설정
+    print("Rosmaster 연결 성공!")
 
-    # 2초마다 그리퍼 닫기('1')와 열기('0')를 반복
-    while True:
-        # 그리퍼 닫기 명령 전송
-        print("명령 '1' 전송 (그리퍼 닫기)")
-        opencr.write(b'1') # 데이터를 바이트 형태로 전송합니다.
-        time.sleep(2)
+    # 2. 삑 소리로 연결 확인
+    bot.set_beep(50) # 50ms 동안 삑 소리
+    time.sleep(0.5)
 
-        # 그리퍼 열기 명령 전송
-        print("명령 '0' 전송 (그리퍼 열기)")
-        opencr.write(b'0')
-        time.sleep(2)
+    # 3. 앞으로 2초간 이동
+    forward_speed = 0.2 # 초속 0.2미터 (천천히)
+    move_duration = 2.0 # 2초 동안
+    
+    print(f"{forward_speed}m/s의 속도로 {move_duration}초간 전진합니다...")
+    bot.set_car_motion(forward_speed, 0.0, 0.0)
+    time.sleep(move_duration)
 
-except serial.SerialException as e:
-    print(f"시리얼 포트 오류: {e}")
-    print("1. 'sudo raspi-config'에서 시리얼 포트가 활성화되었는지 확인하세요.")
-    print("2. 'sudo usermod -a -G dialout <사용자이름>'으로 권한을 부여했는지 확인하세요.")
-    print("3. TX, RX, GND 연결이 올바른지 확인하세요.")
+    # 4. 정지
+    print("정지합니다.")
+    bot.set_car_motion(0.0, 0.0, 0.0)
+    time.sleep(1) # 확실히 정지할 시간을 줌
 
-except KeyboardInterrupt:
-    print("\n프로그램 종료. 포트를 닫습니다.")
+    print("테스트 완료.")
+
+except Exception as e:
+    print(f"오류가 발생했습니다: {e}")
+    print("1. 시리얼 포트 이름이 올바른지 확인하세요.")
+    print("2. Rosmaster 보드에 전원이 들어와 있는지 확인하세요.")
+    print("3. 'sudo chmod 666 /dev/ttyUSB0' 와 같이 권한을 부여했는지 확인하세요.")
 
 finally:
-    if 'opencr' in locals() and opencr.is_open:
-        opencr.close()
+    # 5. 프로그램 종료 시 반드시 로봇을 정지
+    if bot is not None:
+        print("안전을 위해 로봇을 정지시키고 연결을 종료합니다.")
+        bot.set_car_motion(0.0, 0.0, 0.0)
