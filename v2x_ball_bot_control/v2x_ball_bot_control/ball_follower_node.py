@@ -19,19 +19,19 @@ class BallFollowerNode(Node):
         self.get_logger().info('공 추적 제어 노드 초기화 시작')
 
         # (파라미터 선언 부분은 기존과 동일)
-        self.ball_topic = self.declare_parameter('ball_topic', '/balls').value
+        self.ball_topic = self.declare_parameter('ball_topic', '/selected_ball').value
         self.estop_topic = self.declare_parameter('estop_topic', '/safety/estop').value
-        self.k_linear = self.declare_parameter('k_linear', 0.4).value
-        self.k_angular = self.declare_parameter('k_angular', 1.0).value
+        self.k_linear = self.declare_parameter('k_linear', 0.3).value
+        self.k_angular = self.declare_parameter('k_angular', 0.1).value
         self.target_dist = self.declare_parameter('target_dist_m', 0.1).value
         self.max_linear_speed = self.declare_parameter('v_max', 1.0).value
         self.max_angular_speed = self.declare_parameter('w_max', 1.0).value
         self.accel_linear = self.declare_parameter('accel_v', 0.3).value
-        self.accel_angular = self.declare_parameter('accel_w', 0.1).value
-        self.stop_margin = self.declare_parameter('stop_margin_m', 0.4).value
-        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 5.0).value
+        self.accel_angular = self.declare_parameter('accel_w', 0.05).value
+        self.stop_margin = self.declare_parameter('stop_margin_m', 0.2).value
+        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 1.0).value
         self.ball_timeout = self.declare_parameter('ball_timeout_sec', 1.0).value
-        self.y_scale_correction = self.declare_parameter('y_scale_correction', 0.5).value
+        self.y_scale_correction = self.declare_parameter('y_scale_correction', 1.0).value
         self.serial_port = self.declare_parameter('serial_port', '/dev/ttyUSB1').value
         self.car_type = self.declare_parameter('car_type', 1).value
         self.use_depth_priority = self.declare_parameter('use_depth_priority', True).value
@@ -63,7 +63,7 @@ class BallFollowerNode(Node):
             Bool, '/pickup_complete', self.pickup_complete_callback, 10)
 
         # 제어 루프 타이머
-        self.dt = 0.05
+        self.dt = 2.0
         self.timer = self.create_timer(self.dt, self.control_loop)
         self.get_logger().info("초기화 완료. 공 추적을 시작합니다.")
 
@@ -97,6 +97,7 @@ class BallFollowerNode(Node):
         if self.estop or self.is_timed_out() or self.last_ball_xyz is None:
             if self.is_following:
                 self.get_logger().info('추적 활성화 상태 : 공 좌표를 기다리는중 ....')
+                self.get_logger().info(f'선속도, 각속도{self.k_linear}, {self.k_angular}')
             target_vx, target_wz = 0.0, 0.0
         else:
             x, y, z = self.last_ball_xyz
