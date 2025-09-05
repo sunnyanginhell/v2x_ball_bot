@@ -32,7 +32,7 @@ class BallFollowerNode(Node):
         self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 5.0).value
         self.ball_timeout = self.declare_parameter('ball_timeout_sec', 1.0).value
         self.y_scale_correction = self.declare_parameter('y_scale_correction', 0.5).value
-        self.serial_port = self.declare_parameter('serial_port', '/dev/ttyUSB0').value
+        self.serial_port = self.declare_parameter('serial_port', '/dev/ttyUSB1').value
         self.car_type = self.declare_parameter('car_type', 1).value
         self.use_depth_priority = self.declare_parameter('use_depth_priority', True).value
 
@@ -95,6 +95,8 @@ class BallFollowerNode(Node):
             return
 
         if self.estop or self.is_timed_out() or self.last_ball_xyz is None:
+            if self.is_following:
+                self.get_logger().info('추적 활성화 상태 : 공 좌표를 기다리는중 ....')
             target_vx, target_wz = 0.0, 0.0
         else:
             x, y, z = self.last_ball_xyz

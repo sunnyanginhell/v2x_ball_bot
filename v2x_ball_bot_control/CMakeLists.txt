@@ -26,6 +26,13 @@ install(PROGRAMS
   RENAME ball_follower_node
 )
 
+# ball_pickup_node 설치
+install(PROGRAMS
+  v2x_ball_bot_control/ball_pickup_node.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME ball_pickup_node
+)
+
 # odom_tf_pub 설치
 install(PROGRAMS
   v2x_ball_bot_control/odom_tf_pub.py

@@ -4,6 +4,7 @@ import time
 # 만약 다른 위치에 있다면 경로를 맞게 수정해야 합니다.
 from v2x_ball_bot_control.rosmaster import Rosmaster
 
+<<<<<<< Updated upstream
 # --- 설정 (사용자 환경에 맞게 수정) ---
 # Rosmaster 보드가 연결된 시리얼 포트 이름
 # `ls /dev/tty*` 명령어로 확인 가능 (보통 /dev/ttyUSB0 또는 /dev/ttyACM0)
@@ -14,6 +15,13 @@ CAR_TYPE = 1
 
 # bot 변수를 전역적으로 접근할 수 있도록 초기화
 bot = None
+=======
+# 라즈베리파이의 하드웨어 시리얼 포트 이름
+# 최신 라즈베리파이 OS에서는 /dev/serial0이 표준입니다.
+# 만약 작동하지 않으면 /dev/ttyAMA0으로 시도해보세요.
+SERIAL_PORT = '/dev/ttyACM0' 
+BAUD_RATE = 115200 # OpenCR(아두이노)의 Serial.begin()에 설정된 값과 일치해야 합니다.
+>>>>>>> Stashed changes
 
 try:
     # 1. Rosmaster 객체 생성 및 연결
@@ -50,7 +58,13 @@ except Exception as e:
     print("3. 'sudo chmod 666 /dev/ttyUSB0' 와 같이 권한을 부여했는지 확인하세요.")
 
 finally:
+<<<<<<< Updated upstream
     # 5. 프로그램 종료 시 반드시 로봇을 정지
     if bot is not None:
         print("안전을 위해 로봇을 정지시키고 연결을 종료합니다.")
         bot.set_car_motion(0.0, 0.0, 0.0)
+=======
+    if 'opencr' in locals() and opencr.is_open:
+        opencr.close()
+
+>>>>>>> Stashed changes
