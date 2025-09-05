@@ -1,3 +1,6 @@
+## 도커 들어가는 법
+sudo docker start -ai main_container
+docker exec -it main_container bash
 
 ## WS 전체 클린 빌드
 cd ~/ros2_ws
@@ -61,3 +64,6 @@ ros2 run v2x_ball_bot_control motor_driver_node \
 
 #usb고정 follower 노드 
 ros2 run v2x_ball_bot_control ball_follower_node --ros-args -p serial_port:=/dev/ttyUSB1
+
+#usb고정 pickup노드
+ros2 run v2x_ball_bot_control ball_pickup_node --ros-args -p serial_port:=/dev/ttyUSB1
