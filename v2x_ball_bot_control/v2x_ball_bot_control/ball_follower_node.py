@@ -29,7 +29,7 @@ class BallFollowerNode(Node):
         self.accel_linear = self.declare_parameter('accel_v', 0.3).value
         self.accel_angular = self.declare_parameter('accel_w', 0.05).value
         self.stop_margin = self.declare_parameter('stop_margin_m', 0.2).value
-        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 10.0).value
+        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 50.0).value
         self.ball_timeout = self.declare_parameter('ball_timeout_sec', 1.0).value
         self.y_scale_correction = self.declare_parameter('y_scale_correction', 1.0).value
         self.serial_port = self.declare_parameter('serial_port', '/dev/ttyUSB1').value
@@ -38,6 +38,7 @@ class BallFollowerNode(Node):
 
         # (상태 변수, Rosmaster 초기화 부분은 기존과 동일)
         self.estop = False
+        self.obstacle_detected = False
         self.last_ball_xyz: Optional[tuple[float, float, float]] = None
         self.last_stamp_sec: float = 0.0
         self.is_following = True
@@ -61,6 +62,10 @@ class BallFollowerNode(Node):
         # ✅ Pickup 노드로부터 작업 완료 신호를 받을 서브스크라이버 추가
         self.sub_complete = self.create_subscription(
             Bool, '/pickup_complete', self.pickup_complete_callback, 10)
+        # ✅ 동적 장애물 감지 토픽 서브스크라이버 추가
+        self.sub_obstacle = self.create_subscription(
+            Bool, '/dynamic_obstacle_detect', self.obstacle_callback, 10
+        )
 
         # 제어 루프 타이머
         self.dt = 1.0
@@ -75,6 +80,17 @@ class BallFollowerNode(Node):
             self.last_ball_xyz = None # 이전 공의 위치 정보를 초기화
             self.last_stamp_sec = 0.0
 
+    # ✅ 장애물 감지 콜백 함수 추가
+    def obstacle_callback(self, msg: Bool):
+        if msg.data and not self.obstacle_detected:
+            #장애물이 없음에서 있음으로 바뀐 순간 로그 출력
+            self.get_logger().warn("동적 장애물 감지! 일시 정지합니다.")
+        elif not msg.data and self.obstacle_detected:
+            #장애물이 있음에서 없음으로 바뀐 순간 로그 출력
+            self.get_logger().info("장애물 사라짐. 공 추적을 재개합니다.")
+
+        self.obstacle_detected = msg.data #현재 장애물 상태 업데이트
+
     def ball_callback(self, msg: BallArray):
         if msg.balls and self.is_following:
             ball = msg.balls[0]
@@ -86,7 +102,7 @@ class BallFollowerNode(Node):
         if self.estop: self.get_logger().warn("비상 정지(E-stop) 신호 수신!")
 
     def control_loop(self):
-        # (이하 control_loop 및 다른 함수들은 이전 버전과 동일)
+        #Pickup 중 정지 로직
         if not self.is_following:
             if self.current_vx != 0.0 or self.current_wz != 0.0:
                 self.current_vx = self.slew(self.current_vx, 0.0, self.accel_linear * self.dt)
@@ -94,12 +110,19 @@ class BallFollowerNode(Node):
                 self.send_motor_command(self.current_vx, 0.0, self.current_wz)
             return
 
-        if self.estop or self.is_timed_out() or self.last_ball_xyz is None:
-            if self.is_following:
+        if self.estop or self.is_timed_out() or self.last_ball_xyz is None or self.obstacle_detected:
+            
+            if self.obstacle_detected:
+                self.get_logger().warn('장애물 감지됨. 정지 상태 유지.')
+            elif self.estop:
+                 self.get_logger().error('E-STOP 활성화됨. 정지 상태 유지.')
+            elif self.is_following:
                 self.get_logger().info('추적 활성화 상태 : 공 좌표를 기다리는중 ....')
                 self.get_logger().info(f'선속도, 각속도{self.k_linear}, {self.k_angular}')
-            target_vx, target_wz = 0.0, 0.0
+                
+            target_vx, target_wz = 0.0, 0.0 # ✅ 모든 정지 조건에서 목표 속도를 0으로 설정
         else:
+            #정상 주행 로직
             x, y, z = self.last_ball_xyz
             y_corrected = y * self.y_scale_correction
             distance = z if self.use_depth_priority and z > 0.0 else math.hypot(x, y_corrected)
