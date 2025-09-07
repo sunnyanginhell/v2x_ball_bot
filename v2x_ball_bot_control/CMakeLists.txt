@@ -33,12 +33,21 @@ install(PROGRAMS
   RENAME ball_pickup_node
 )
 
+# obstacle_detection_node 설치
+install(PROGRAMS
+  v2x_ball_bot_control/obstacle_detection_node.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME obstacle_detection_node
+)
+
 # odom_tf_pub 설치
 install(PROGRAMS
   v2x_ball_bot_control/odom_tf_pub.py
   DESTINATION lib/${PROJECT_NAME}
   PERMISSIONS OWNER_EXECUTE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
 )
+
+
 
 # ✅ YOLO 모델 파일 함께 설치
 install(FILES

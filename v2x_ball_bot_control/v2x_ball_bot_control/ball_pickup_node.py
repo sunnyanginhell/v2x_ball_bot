@@ -15,7 +15,7 @@ class BallPickupNode(Node):
         # 파라미터 선언
         self.opencr_port = self.declare_parameter('opencr_port', '/dev/ttyACM0').value
         #serial_port 뭐 에러뜨면 ttyUSB1으로 실행해보기.
-        self.serial_port = self.declare_parameter('serial_port', '/dev/ttyUSB0').value
+        self.serial_port = self.declare_parameter('serial_port', '/dev/ttyUSB1').value
         self.car_type = self.declare_parameter('car_type', 1).value
 
         # 상태 변수

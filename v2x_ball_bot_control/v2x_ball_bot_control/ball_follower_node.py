@@ -23,13 +23,13 @@ class BallFollowerNode(Node):
         self.estop_topic = self.declare_parameter('estop_topic', '/safety/estop').value
         self.k_linear = self.declare_parameter('k_linear', 0.3).value
         self.k_angular = self.declare_parameter('k_angular', 0.1).value
-        self.target_dist = self.declare_parameter('target_dist_m', 0.1).value
+        self.target_dist = self.declare_parameter('target_dist_m', 0.5).value
         self.max_linear_speed = self.declare_parameter('v_max', 1.0).value
         self.max_angular_speed = self.declare_parameter('w_max', 1.0).value
         self.accel_linear = self.declare_parameter('accel_v', 0.3).value
         self.accel_angular = self.declare_parameter('accel_w', 0.05).value
         self.stop_margin = self.declare_parameter('stop_margin_m', 0.2).value
-        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 1.0).value
+        self.deadband_yaw_deg = self.declare_parameter('deadband_yaw_deg', 10.0).value
         self.ball_timeout = self.declare_parameter('ball_timeout_sec', 1.0).value
         self.y_scale_correction = self.declare_parameter('y_scale_correction', 1.0).value
         self.serial_port = self.declare_parameter('serial_port', '/dev/ttyUSB1').value
@@ -63,7 +63,7 @@ class BallFollowerNode(Node):
             Bool, '/pickup_complete', self.pickup_complete_callback, 10)
 
         # 제어 루프 타이머
-        self.dt = 2.0
+        self.dt = 1.0
         self.timer = self.create_timer(self.dt, self.control_loop)
         self.get_logger().info("초기화 완료. 공 추적을 시작합니다.")
 
@@ -104,6 +104,8 @@ class BallFollowerNode(Node):
             y_corrected = y * self.y_scale_correction
             distance = z if self.use_depth_priority and z > 0.0 else math.hypot(x, y_corrected)
             angle = math.atan2(y_corrected, x)
+
+            self.get_logger().info(f"distance: {distance:.2f}, angle: {math.degrees(angle):.2f}deg")
 
             is_goal_reached = (distance < self.target_dist + self.stop_margin) and \
                                 (abs(angle) < math.radians(self.deadband_yaw_deg))

@@ -61,9 +61,22 @@ ros2 run v2x_ball_bot_control motor_driver_node \
              -p serial_baud:=115200
 
 
+## 권한 문제
+sudo chown ss802:ss802 /home/ss802/ros2_ws/src/v2x_ball_bot_control/v2x_ball_bot_control/ball_pickup_node.py
+sudo chown -R ss802:ss802 /home/ss802/ros2_ws/src/v2x_ball_bot_control
 
-#usb고정 follower 노드 
+
+## usb고정 follower 노드 
 ros2 run v2x_ball_bot_control ball_follower_node --ros-args -p serial_port:=/dev/ttyUSB1
 
-#usb고정 pickup노드
+## usb고정 pickup노드
 ros2 run v2x_ball_bot_control ball_pickup_node --ros-args -p serial_port:=/dev/ttyUSB1
+
+
+## lidar 실행
+ros2 launch sllidar_ros2 sllidar_a1_launch.py
+
+## obstacle_detection 실행
+ros2 run v2x_ball_bot_control obstacle_detection_node
+메시지 토픽 확인 : ros2 topic echo /dynamic_obstacle_detect
+
