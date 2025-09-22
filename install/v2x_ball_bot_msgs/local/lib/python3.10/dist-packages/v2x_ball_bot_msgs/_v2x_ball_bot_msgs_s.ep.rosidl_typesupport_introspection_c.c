@@ -1,0 +1,1 @@
+/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs/rosidl_generator_py/v2x_ball_bot_msgs/_v2x_ball_bot_msgs_s.ep.rosidl_typesupport_introspection_c.c

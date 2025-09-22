@@ -1,0 +1,278 @@
+[0.021s] Invoking command in '/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yuha/V2X-ball-bot/v2x_ball_bot_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs
+[0.172s] -- The C compiler identification is GNU 11.4.0
+[0.407s] -- The CXX compiler identification is GNU 11.4.0
+[0.549s] -- Detecting C compiler ABI info
+[0.632s] -- Detecting C compiler ABI info - done
+[0.636s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.638s] -- Detecting C compile features
+[0.638s] -- Detecting C compile features - done
+[0.641s] -- Detecting CXX compiler ABI info
+[0.730s] -- Detecting CXX compiler ABI info - done
+[0.735s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.735s] -- Detecting CXX compile features
+[0.735s] -- Detecting CXX compile features - done
+[0.745s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.843s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.894s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.922s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.926s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.932s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.034s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.067s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.097s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.305s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.464s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.671s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.735s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.738s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.899s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.899s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.899s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.899s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.914s] -- Found PythonExtra: .so  
+[1.978s] -- Configuring done
+[2.009s] -- Generating done
+[2.017s] -- Build files have been written to: /home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs
+[2.022s] Invoked command in '/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yuha/V2X-ball-bot/v2x_ball_bot_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs
+[2.023s] Invoking command in '/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs -- -j22 -l22
+[2.048s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.054s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.061s] [  3%] Built target ament_cmake_python_symlink_v2x_ball_bot_msgs
+[2.224s] running egg_info
+[2.224s] creating v2x_ball_bot_msgs.egg-info
+[2.225s] writing v2x_ball_bot_msgs.egg-info/PKG-INFO
+[2.226s] writing dependency_links to v2x_ball_bot_msgs.egg-info/dependency_links.txt
+[2.226s] writing top-level names to v2x_ball_bot_msgs.egg-info/top_level.txt
+[2.226s] writing manifest file 'v2x_ball_bot_msgs.egg-info/SOURCES.txt'
+[2.228s] reading manifest file 'v2x_ball_bot_msgs.egg-info/SOURCES.txt'
+[2.228s] writing manifest file 'v2x_ball_bot_msgs.egg-info/SOURCES.txt'
+[2.248s] [  3%] Built target ament_cmake_python_build_v2x_ball_bot_msgs_egg
+[2.330s] [  7%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_generator_c.dir/rosidl_generator_c/v2x_ball_bot_msgs/msg/detail/ball_position__functions.c.o[0m
+[2.330s] [  7%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_generator_c.dir/rosidl_generator_c/v2x_ball_bot_msgs/msg/detail/ball_pixel__functions.c.o[0m
+[2.330s] [  7%] Built target v2x_ball_bot_msgs__cpp
+[2.331s] [  9%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_generator_c.dir/rosidl_generator_c/v2x_ball_bot_msgs/msg/detail/ball__functions.c.o[0m
+[2.331s] [ 10%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_generator_c.dir/rosidl_generator_c/v2x_ball_bot_msgs/msg/detail/ball_array__functions.c.o[0m
+[2.338s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.338s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.338s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.400s] [ 18%] [32m[1mLinking C shared library libv2x_ball_bot_msgs__rosidl_generator_c.so[0m
+[2.487s] [ 18%] Built target v2x_ball_bot_msgs__rosidl_generator_c
+[2.494s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.496s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.499s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.562s] [ 25%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_ball_bot_msgs/msg/ball_position__type_support.cpp.o[0m
+[2.563s] [ 27%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_ball_bot_msgs/msg/ball__type_support.cpp.o[0m
+[2.563s] [ 29%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_ball_bot_msgs/msg/ball_array__type_support.cpp.o[0m
+[2.565s] [ 32%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/v2x_ball_bot_msgs/msg/detail/ball_pixel__type_support.cpp.o[0m
+[2.565s] [ 32%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/v2x_ball_bot_msgs/msg/detail/ball__type_support.cpp.o[0m
+[2.566s] [ 34%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/v2x_ball_bot_msgs/msg/detail/ball_position__type_support.cpp.o[0m
+[2.566s] [ 36%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/v2x_ball_bot_msgs/msg/ball_pixel__type_support.cpp.o[0m
+[2.567s] [ 38%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/v2x_ball_bot_msgs/msg/detail/ball_array__type_support.cpp.o[0m
+[2.626s] [ 41%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/v2x_ball_bot_msgs/msg/detail/dds_fastrtps/ball_pixel__type_support.cpp.o[0m
+[2.626s] [ 41%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/v2x_ball_bot_msgs/msg/detail/dds_fastrtps/ball_position__type_support.cpp.o[0m
+[2.627s] [ 43%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/v2x_ball_bot_msgs/msg/detail/dds_fastrtps/ball_array__type_support.cpp.o[0m
+[2.631s] [ 45%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/v2x_ball_bot_msgs/msg/detail/dds_fastrtps/ball__type_support.cpp.o[0m
+[2.794s] [ 47%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/v2x_ball_bot_msgs/msg/ball__type_support.cpp.o[0m
+[2.796s] [ 50%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/v2x_ball_bot_msgs/msg/ball_position__type_support.cpp.o[0m
+[2.796s] [ 50%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/v2x_ball_bot_msgs/msg/ball_pixel__type_support.cpp.o[0m
+[2.796s] [ 52%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/v2x_ball_bot_msgs/msg/ball_array__type_support.cpp.o[0m
+[2.843s] [ 54%] [32m[1mLinking CXX shared library libv2x_ball_bot_msgs__rosidl_typesupport_c.so[0m
+[2.887s] [ 58%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/v2x_ball_bot_msgs/msg/detail/ball_pixel__type_support_c.cpp.o[0m
+[2.887s] [ 58%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/v2x_ball_bot_msgs/msg/detail/ball_position__type_support_c.cpp.o[0m
+[2.891s] [ 60%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/v2x_ball_bot_msgs/msg/detail/ball_array__type_support_c.cpp.o[0m
+[2.897s] [ 61%] [32mBuilding CXX object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/v2x_ball_bot_msgs/msg/detail/ball__type_support_c.cpp.o[0m
+[2.909s] [ 63%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/v2x_ball_bot_msgs/msg/detail/ball_position__type_support.c.o[0m
+[2.910s] [ 65%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/v2x_ball_bot_msgs/msg/detail/ball__type_support.c.o[0m
+[2.911s] [ 67%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/v2x_ball_bot_msgs/msg/detail/ball_pixel__type_support.c.o[0m
+[2.916s] [ 69%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/v2x_ball_bot_msgs/msg/detail/ball_array__type_support.c.o[0m
+[2.986s] [ 70%] [32m[1mLinking C shared library libv2x_ball_bot_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.038s] [ 70%] Built target v2x_ball_bot_msgs__rosidl_typesupport_c
+[3.041s] [ 72%] [32m[1mLinking CXX shared library libv2x_ball_bot_msgs__rosidl_typesupport_cpp.so[0m
+[3.107s] [ 72%] Built target v2x_ball_bot_msgs__rosidl_typesupport_introspection_c
+[3.159s] [ 72%] Built target v2x_ball_bot_msgs__rosidl_typesupport_cpp
+[3.173s] [ 74%] [32m[1mLinking CXX shared library libv2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.248s] [ 76%] [32m[1mLinking CXX shared library libv2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.295s] [ 76%] Built target v2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp
+[3.304s] [ 78%] [32m[1mLinking CXX shared library libv2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.363s] [ 78%] Built target v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp
+[3.402s] [ 78%] Built target v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c
+[3.416s] [ 78%] Built target v2x_ball_bot_msgs
+[3.431s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.812s] [ 80%] Built target v2x_ball_bot_msgs__py
+[3.825s] [ 81%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_generator_py.dir/rosidl_generator_py/v2x_ball_bot_msgs/msg/_ball_pixel_s.c.o[0m
+[3.826s] [ 83%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_generator_py.dir/rosidl_generator_py/v2x_ball_bot_msgs/msg/_ball_position_s.c.o[0m
+[3.826s] [ 85%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_generator_py.dir/rosidl_generator_py/v2x_ball_bot_msgs/msg/_ball_s.c.o[0m
+[3.826s] [ 87%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_generator_py.dir/rosidl_generator_py/v2x_ball_bot_msgs/msg/_ball_array_s.c.o[0m
+[3.959s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/v2x_ball_bot_msgs/libv2x_ball_bot_msgs__rosidl_generator_py.so[0m
+[4.030s] [ 89%] Built target v2x_ball_bot_msgs__rosidl_generator_py
+[4.044s] [ 94%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/v2x_ball_bot_msgs/_v2x_ball_bot_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[4.044s] [ 94%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/v2x_ball_bot_msgs/_v2x_ball_bot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.045s] [ 94%] [32mBuilding C object CMakeFiles/v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/v2x_ball_bot_msgs/_v2x_ball_bot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.113s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.113s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.122s] [100%] [32m[1mLinking C shared library rosidl_generator_py/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.182s] [100%] Built target v2x_ball_bot_msgs__rosidl_typesupport_introspection_c__pyext
+[4.185s] [100%] Built target v2x_ball_bot_msgs__rosidl_typesupport_c__pyext
+[4.210s] [100%] Built target v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.219s] Invoked command in '/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs -- -j22 -l22
+[4.227s] Invoking command in '/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs
+[4.232s] -- Install configuration: ""
+[4.233s] -- Execute custom install script
+[4.234s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/ament_index/resource_index/rosidl_interfaces/v2x_ball_bot_msgs
+[4.240s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/ball.h
+[4.246s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/ball_array.h
+[4.251s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/ball_pixel.h
+[4.256s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/ball_position.h
+[4.262s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__functions.h
+[4.267s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__struct.h
+[4.272s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__type_support.h
+[4.278s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__functions.h
+[4.284s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__struct.h
+[4.289s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__type_support.h
+[4.294s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__functions.h
+[4.300s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__struct.h
+[4.305s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__type_support.h
+[4.311s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__functions.h
+[4.317s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__struct.h
+[4.322s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__type_support.h
+[4.327s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.334s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/environment/library_path.sh
+[4.341s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/environment/library_path.dsv
+[4.346s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__rosidl_typesupport_fastrtps_c.h
+[4.352s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__rosidl_typesupport_fastrtps_c.h
+[4.357s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__rosidl_typesupport_fastrtps_c.h
+[4.363s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__rosidl_typesupport_fastrtps_c.h
+[4.368s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.373s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__rosidl_typesupport_introspection_c.h
+[4.379s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__rosidl_typesupport_introspection_c.h
+[4.384s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__rosidl_typesupport_introspection_c.h
+[4.391s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__rosidl_typesupport_introspection_c.h
+[4.396s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.402s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/ball.hpp
+[4.407s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/ball_array.hpp
+[4.412s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/ball_pixel.hpp
+[4.418s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/ball_position.hpp
+[4.423s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__builder.hpp
+[4.430s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__struct.hpp
+[4.437s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__traits.hpp
+[4.449s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__type_support.hpp
+[4.457s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__builder.hpp
+[4.471s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__struct.hpp
+[4.479s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__traits.hpp
+[4.488s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__type_support.hpp
+[4.497s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__builder.hpp
+[4.505s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__struct.hpp
+[4.512s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__traits.hpp
+[4.525s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__type_support.hpp
+[4.532s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__builder.hpp
+[4.541s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__struct.hpp
+[4.549s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__traits.hpp
+[4.562s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__type_support.hpp
+[4.571s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.580s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__rosidl_typesupport_fastrtps_cpp.hpp
+[4.587s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__rosidl_typesupport_fastrtps_cpp.hpp
+[4.593s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__rosidl_typesupport_fastrtps_cpp.hpp
+[4.599s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__rosidl_typesupport_fastrtps_cpp.hpp
+[4.606s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.614s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball__rosidl_typesupport_introspection_cpp.hpp
+[4.620s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_array__rosidl_typesupport_introspection_cpp.hpp
+[4.627s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_pixel__rosidl_typesupport_introspection_cpp.hpp
+[4.635s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/include/v2x_ball_bot_msgs/v2x_ball_bot_msgs/msg/detail/ball_position__rosidl_typesupport_introspection_cpp.hpp
+[4.642s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/environment/pythonpath.sh
+[4.649s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/environment/pythonpath.dsv
+[4.657s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[4.663s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.670s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.677s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[4.684s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/__init__.py
+[4.691s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/_v2x_ball_bot_msgs_s.ep.rosidl_typesupport_c.c
+[4.698s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/_v2x_ball_bot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.706s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/_v2x_ball_bot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[4.714s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/libv2x_ball_bot_msgs__rosidl_generator_py.so
+[4.722s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/__init__.py
+[4.729s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball.py
+[4.736s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_array.py
+[4.744s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_array_s.c
+[4.750s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_pixel.py
+[4.758s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_pixel_s.c
+[4.765s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_position.py
+[4.772s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_position_s.c
+[4.779s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_s.c
+[4.787s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.793s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.800s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.807s] -- Up-to-date symlink: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.807s] -- Up-to-date symlink: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.807s] -- Up-to-date symlink: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/v2x_ball_bot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.808s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/msg/BallPixel.idl
+[4.815s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/msg/BallPosition.idl
+[4.823s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/msg/Ball.idl
+[4.831s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/msg/BallArray.idl
+[4.838s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/msg/BallPixel.msg
+[4.846s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/msg/BallPosition.msg
+[4.853s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/msg/Ball.msg
+[4.861s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/msg/BallArray.msg
+[4.868s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/ament_index/resource_index/package_run_dependencies/v2x_ball_bot_msgs
+[4.875s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/ament_index/resource_index/parent_prefix_path/v2x_ball_bot_msgs
+[4.884s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/environment/ament_prefix_path.sh
+[4.891s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/environment/ament_prefix_path.dsv
+[4.899s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/environment/path.sh
+[4.907s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/environment/path.dsv
+[4.914s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/local_setup.bash
+[4.921s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/local_setup.sh
+[4.928s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/local_setup.zsh
+[4.935s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/local_setup.dsv
+[4.941s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/package.dsv
+[4.948s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/ament_index/resource_index/packages/v2x_ball_bot_msgs
+[4.956s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/rosidl_cmake-extras.cmake
+[4.964s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.970s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.976s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.983s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.988s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.995s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.001s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgsConfig.cmake
+[5.007s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgsConfig-version.cmake
+[5.014s] -- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/package.xml
+[5.020s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_generator_c.so
+[5.021s] -- Set runtime path of "/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_generator_c.so" to ""
+[5.021s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c.so
+[5.021s] -- Set runtime path of "/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[5.021s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_introspection_c.so
+[5.021s] -- Set runtime path of "/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_introspection_c.so" to ""
+[5.021s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_c.so
+[5.022s] -- Set runtime path of "/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_c.so" to ""
+[5.022s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.022s] -- Set runtime path of "/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.022s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp.so
+[5.022s] -- Set runtime path of "/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[5.022s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_cpp.so
+[5.022s] -- Set runtime path of "/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_typesupport_cpp.so" to ""
+[5.059s] Listing '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs'...
+[5.060s] Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/__init__.py'...
+[5.060s] Listing '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg'...
+[5.060s] Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/__init__.py'...
+[5.060s] Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball.py'...
+[5.060s] Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_array.py'...
+[5.060s] Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_pixel.py'...
+[5.060s] Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/local/lib/python3.10/dist-packages/v2x_ball_bot_msgs/msg/_ball_position.py'...
+[5.063s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_generator_py.so
+[5.063s] -- Set runtime path of "/home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/lib/libv2x_ball_bot_msgs__rosidl_generator_py.so" to ""
+[5.063s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_generator_cExport.cmake
+[5.064s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.064s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.064s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.064s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.064s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.064s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgs__rosidl_typesupport_cExport.cmake
+[5.064s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.064s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_generator_cppExport.cmake
+[5.065s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.065s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.065s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.065s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.065s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgs__rosidl_typesupport_cppExport.cmake
+[5.065s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/v2x_ball_bot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.065s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_generator_pyExport.cmake
+[5.065s] -- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_msgs/share/v2x_ball_bot_msgs/cmake/export_v2x_ball_bot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[5.067s] Invoked command in '/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs

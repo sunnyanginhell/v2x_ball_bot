@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from v2x_ball_bot_msgs/msg/BallPixel.msg
+// generated code does not contain a copyright notice
+
+
+module v2x_ball_bot_msgs {
+  module msg {
+    struct BallPixel {
+      int32 u;
+
+      int32 v;
+    };
+  };
+};

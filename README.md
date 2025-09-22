@@ -80,3 +80,7 @@ ros2 launch sllidar_ros2 sllidar_a1_launch.py
 ros2 run v2x_ball_bot_control obstacle_detection_node
 메시지 토픽 확인 : ros2 topic echo /dynamic_obstacle_detect
 
+## rviz2에 고정맵 띄우기
+ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 map odom # Global Status 정상화
+ros2 launch v2x_ball_bot_bringup display_map.launch.py # 런치파일 실행
+# 그리고 Display에서 map 추가하고 topic: /map에서 QoS 설정을 reliable이랑 transient local로 수정

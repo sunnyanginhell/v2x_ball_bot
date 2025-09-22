@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-9f9a9abf10901acb933c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "v2x_ball_bot_msgs__py",
+					"jsonFile" : "directory-v2x_ball_bot_msgs__py-4ce9b619ff94df25e143.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs/v2x_ball_bot_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "v2x_ball_bot_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_v2x_ball_bot_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_v2x_ball_bot_msgs_egg-3e0e4727f9d415170a4e.json",
+					"name" : "ament_cmake_python_build_v2x_ball_bot_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_v2x_ball_bot_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_v2x_ball_bot_msgs-015111ee7c33f5ffea77.json",
+					"name" : "ament_cmake_python_symlink_v2x_ball_bot_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5a0ad9b17a93c5129d84.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs-3118199d1d6178010075.json",
+					"name" : "v2x_ball_bot_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__cpp-0172576e3d93af5e6928.json",
+					"name" : "v2x_ball_bot_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "v2x_ball_bot_msgs__py::@57d0e2acdbf0cfd4afb3",
+					"jsonFile" : "target-v2x_ball_bot_msgs__py-f236fb2abe88fd71cf64.json",
+					"name" : "v2x_ball_bot_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_generator_c-ed6f20a8de589b6a41e2.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_generator_py-cac0d79e4da35a74914d.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_c-3988c4e5ebc899696ceb.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_c__pyext-472e65c878ab9ca90551.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_cpp-2fe68d800c6a31967192.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c-f58f5f3dbf941c44fa22.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c__pyext-f38167a6513c2797fd0a.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp-514a606ab43805a476d2.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_introspection_c-d47b41aa83814c319a86.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_introspection_c__pyext-5c64f716c29910845051.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp-7852d378d94694715601.json",
+					"name" : "v2x_ball_bot_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "v2x_ball_bot_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-v2x_ball_bot_msgs_uninstall-ae0ae4680d0b0b9cb26f.json",
+					"name" : "v2x_ball_bot_msgs_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs",
+		"source" : "/home/yuha/V2X-ball-bot/v2x_ball_bot_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

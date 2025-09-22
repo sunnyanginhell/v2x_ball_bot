@@ -1,0 +1,101 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yuha/V2X-ball-bot/build/v2x_ball_bot_control
+Built target ament_cmake_python_symlink_v2x_ball_bot_control
+running egg_info
+creating v2x_ball_bot_control.egg-info
+writing v2x_ball_bot_control.egg-info/PKG-INFO
+writing dependency_links to v2x_ball_bot_control.egg-info/dependency_links.txt
+writing top-level names to v2x_ball_bot_control.egg-info/top_level.txt
+writing manifest file 'v2x_ball_bot_control.egg-info/SOURCES.txt'
+reading manifest file 'v2x_ball_bot_control.egg-info/SOURCES.txt'
+writing manifest file 'v2x_ball_bot_control.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_v2x_ball_bot_control_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/environment/pythonpath.sh
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/environment/pythonpath.dsv
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control-0.0.0-py3.10.egg-info/PKG-INFO
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control-0.0.0-py3.10.egg-info/top_level.txt
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/.DS_Store
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/__init__.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_follower_node.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/__init__.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/debug_visualizer.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/depth_mapper.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/detector.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/marker_utils.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/selector.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/tracker.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception_node.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_pickup_node.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/court_manager.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/map_transform_node.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/motor_driver_node.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/new_ball_detector.pt
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/obstacle_detection_node.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/odom_tf_pub.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/rosmaster.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/scan_manager.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/visual_servoing_node.py
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/lib/v2x_ball_bot_control/new_ball_detector.pt
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/ament_index/resource_index/package_run_dependencies/v2x_ball_bot_control
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/ament_index/resource_index/parent_prefix_path/v2x_ball_bot_control
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/environment/ament_prefix_path.sh
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/environment/ament_prefix_path.dsv
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/environment/path.sh
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/environment/path.dsv
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/local_setup.bash
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/local_setup.sh
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/local_setup.zsh
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/local_setup.dsv
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/package.dsv
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/ament_index/resource_index/packages/v2x_ball_bot_control
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/cmake/v2x_ball_bot_controlConfig.cmake
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/cmake/v2x_ball_bot_controlConfig-version.cmake
+-- Symlinking: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/share/v2x_ball_bot_control/package.xml
+Listing '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/__init__.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_follower_node.py'...
+Listing '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/__init__.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/debug_visualizer.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/depth_mapper.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/detector.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/marker_utils.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/selector.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception/tracker.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_perception_node.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/ball_pickup_node.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/court_manager.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/map_transform_node.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/motor_driver_node.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/obstacle_detection_node.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/odom_tf_pub.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/rosmaster.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/scan_manager.py'...
+Compiling '/home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/local/lib/python3.10/dist-packages/v2x_ball_bot_control/visual_servoing_node.py'...
+-- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/lib/v2x_ball_bot_control/ball_perception_node
+-- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/lib/v2x_ball_bot_control/ball_follower_node
+-- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/lib/v2x_ball_bot_control/ball_pickup_node
+-- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/lib/v2x_ball_bot_control/obstacle_detection_node
+-- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/lib/v2x_ball_bot_control/odom_tf_pub.py
+-- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/lib/v2x_ball_bot_control/map_transform_node
+-- Installing: /home/yuha/V2X-ball-bot/install/v2x_ball_bot_control/lib/v2x_ball_bot_control/court_manager

@@ -47,7 +47,12 @@ install(PROGRAMS
   PERMISSIONS OWNER_EXECUTE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
 )
 
-
+# ball_goal_transform_node 설치
+install(PROGRAMS
+  v2x_ball_bot_control/map_transform_node.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME map_transform_node
+)
 
 # ✅ YOLO 모델 파일 함께 설치
 install(FILES

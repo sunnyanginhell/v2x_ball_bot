@@ -1,0 +1,4 @@
+/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs/rosidl_adapter/v2x_ball_bot_msgs:msg/BallPixel.idl
+/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs/rosidl_adapter/v2x_ball_bot_msgs:msg/BallPosition.idl
+/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs/rosidl_adapter/v2x_ball_bot_msgs:msg/Ball.idl
+/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs/rosidl_adapter/v2x_ball_bot_msgs:msg/BallArray.idl

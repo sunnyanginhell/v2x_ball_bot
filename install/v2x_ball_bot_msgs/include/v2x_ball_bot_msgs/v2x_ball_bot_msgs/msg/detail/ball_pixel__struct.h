@@ -1,0 +1,1 @@
+/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs/rosidl_generator_c/v2x_ball_bot_msgs/msg/detail/ball_pixel__struct.h

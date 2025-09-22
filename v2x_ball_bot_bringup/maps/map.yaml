@@ -1,6 +1,6 @@
 # ~/maps/map.yaml
-image: map.pgm                     # PGM 절대경로 권장
-resolution: 0.25                 # 1픽셀당 0.05m (보통 5cm; 필요시 조정)
+image: /home/yuha/V2X-ball-bot/v2x_ball_bot_bringup/maps/map.pgm                   # PGM 절대경로 권장
+resolution: 0.02                   # 1픽셀당 0.05m (보통 5cm; 필요시 조정)
 origin: [0.0, 0.0, 0.0]            # 맵의 (0,0) 위치와 yaw(rad). 모르겠다면 일단 0.
 negate: 0                          # 흰=자유(0), 검정=점유(100)면 0, 반대면 1
 occupied_thresh: 0.65

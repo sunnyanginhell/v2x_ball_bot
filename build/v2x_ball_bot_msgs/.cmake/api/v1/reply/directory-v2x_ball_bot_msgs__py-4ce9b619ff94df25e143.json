@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "v2x_ball_bot_msgs__py",
+		"source" : "/home/yuha/V2X-ball-bot/build/v2x_ball_bot_msgs/v2x_ball_bot_msgs__py"
+	}
+}
