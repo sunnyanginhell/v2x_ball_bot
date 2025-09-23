@@ -35,10 +35,14 @@ class MapBasedPatrolNode(Node):
         self.DEADMAN_TIMEOUT = self.declare_parameter('deadman_timeout_s', 0.35).value
         self.CMD_RATE = self.declare_parameter('cmd_rate_hz', 10.0).value
 
+        # 순찰 횟수 제한(옵션 A)
+        self.PATROL_MAX_CYCLES = self.declare_parameter('patrol_max_cycles', 3).value
+
         # === 2) 상태 ===
         self.is_map_received = False
         self.goal_points = []
         self.current_goal_index = -1
+        self.completed_cycles = 0
         self.last_cmd_time = self.get_clock().now()
 
         # === 3) Rosmaster 연결 ===
@@ -65,7 +69,7 @@ class MapBasedPatrolNode(Node):
         wd_period = 1.0 / max(self.CMD_RATE, 1.0)
         self.watchdog_timer = self.create_timer(wd_period, self._deadman_watchdog)
 
-        # === 6) 안전 훅 (rclpy.on_shutdown 없이) ===
+        # === 6) 안전 훅 (rclpy.on_shutdown 없음) ===
         atexit.register(self._emergency_stop)                 # 프로세스 종료 시
         signal.signal(signal.SIGINT, self._sigint_handler)    # Ctrl+C
         try:
@@ -129,12 +133,26 @@ class MapBasedPatrolNode(Node):
         angle_error = math.atan2(math.sin(angle_to_goal - robot_yaw),
                                  math.cos(angle_to_goal - robot_yaw))
 
-        # 도착 판정
+        # 도착 판정 (+ 한 바퀴 카운트 & 횟수 제한)
         if dist_error < self.GOAL_TOLERANCE_DIST:
             self.get_logger().info(f"목표 지점 {self.current_goal_index + 1} 도착!")
             self.send_motor_command(0.0, 0.0, 0.0)
+
+            prev_index = self.current_goal_index
             self.current_goal_index = (self.current_goal_index + 1) % len(self.goal_points)
-            self.get_logger().info(f"다음 목표({self.current_goal_index + 1})로 이동합니다...")
+
+            # 마지막 → 0으로 넘어오면 한 바퀴 완료
+            if prev_index == len(self.goal_points) - 1 and self.current_goal_index == 0:
+                self.completed_cycles += 1
+                self.get_logger().info(
+                    f"한 바퀴 완료: {self.completed_cycles}/{self.PATROL_MAX_CYCLES}"
+                )
+                if self.completed_cycles >= self.PATROL_MAX_CYCLES:
+                    self.get_logger().info("지정한 순찰 횟수 도달 — 순찰 중지")
+                    self.send_motor_command(0.0, 0.0, 0.0)
+                    self.current_goal_index = -1  # 순찰 비활성화
+                    return
+
             time.sleep(2.0)  # 다음 목표 전 대기
             return
 
