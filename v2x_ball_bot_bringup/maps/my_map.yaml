@@ -1,0 +1,7 @@
+image: my_map.pgm
+mode: trinary
+resolution: 0.02   # <-- 이 값을 0.01에서 0.02로 변경
+origin: [0.0, 0.0, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25
