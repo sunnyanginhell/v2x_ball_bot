@@ -35,6 +35,15 @@ def generate_launch_description():
         arguments=['0','0','0.12','0','0','0','base_link','laser']  # 실제 높이 0.12m
     )
 
+    # === 임시 map → odom TF ===
+    tf_map_odom = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_map_to_odom',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        output='screen'
+    )
+
     # === 임시 odom → base_link TF ===
     tf_odom = Node(
         package='tf2_ros',
