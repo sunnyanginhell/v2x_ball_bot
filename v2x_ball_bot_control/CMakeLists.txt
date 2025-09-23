@@ -11,6 +11,12 @@ ament_python_install_package(v2x_ball_bot_control)
 # Nodes 설치
 # =========================
 
+# patrol_test_node 설치
+install(PROGRAMS
+  v2x_ball_bot_control/patrol_test.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME patrol_test_node
+)
 
 # ball_perception_node 설치 
 install(PROGRAMS
